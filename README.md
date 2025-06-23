@@ -1,1 +1,1 @@
-# A SQL Query a day to keep the recession away
+From Where Great Hackers Select Data Over Time
