@@ -1,0 +1,90 @@
+
+
+In the world there is a huge amount of data every thing is dealt with the data 
+
+what is data why,data is useful ? 
+
+the data is something which is used to generate the market insights and used for many other purposes ..
+
+so to store that kind of data what we use 
+
+For some time lets keep the SQL a side think sql is not in the world we use excel sheets or something to store that data
+
+but just think how much data do excel sheets hold can it hold TB'S of data it is impossible 
+
+
+so we use sql to store such a huge data
+
+
+where are these sql data bases -> in servers 
+
+servers  -> databases -> schema -> tables -> data 
+
+
+the data is stores at here 
+
+so as we have not started applying queries till now 
+
+just for overview -> "select * from orders" 
+
+if we write this query what will happen in the backend -> lets see 
+
+
+not only we many people and many applications use data in many ways like powebi,tableau ,people write queries so what will happen in the backend when the apps or people or websites make a request 
+
+
+to ge the data the queries wont hit the data base directly it will hit the DBMS which will take our request and send that request to the database and data base send the response DBMS carries it and 
+bring back to just like client-server protocal--> api calls 
+
+when the query hits the DBMS the query go through plans -> like parsed ,analyzed ,optimized , logical plans 
+
+
+lets see waht will happen at every pahse :
+parsed:
+check whether the syntax is right or wrong 
+
+analyzed :
+check whether the table is there or not means -> select customer_jd  from orders 
+
+it will check whether the customer_id is there is the orders or not 
+
+optimized:
+thes are some rules like predicate push down ,mixing some filters etc 
+
+physical plan:
+it is the selction of which join is best which to select at which time decided by the catalyst optimized
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+SO 
+
+waht is ddl and dml  ?
+
+DDL stands for data definition language 
+
+DML stands for data manipulation language 
+
+
+lets understand the terms and actions performed closely:
+
+DDL - > DEFINITION Means when there is nothing and when we create something we call it as defined 
+
+same way when we dont have a data base and table in the database 
+
+then we create it 
+
+and also when we  created the table ,we can drop the table , we can alter the table 
+
+what is drop -> remove 
+
+what is alter -> make changes,add new columns ..
+
+create_table:
+-------------
+create table customer(
+customer_id int,
+customer_name varchar(20),
+customer_last_name varchar(20)
+) 
+
+drop_table:
+---------
+DROP TABLE customer
+
+alter_table:
+----------
+alter table customer add column customer_contact varchar(20) 
+
+
+
+
+the DDL is only used to create th schema not the values in the table 
+
+schema means -> column names like -> order_id,order_date,customer_id,order_status 
+
+
+so what we use to create vales:
+
+DML:
+Data manipulation language :
+
+in this we have insert ,update,delete,truncate 
+
+and there is also a data query language which is used to query the tables -> select 
+
+insert:
+--------
+
+insert into customers values()
+
+
+update:
+------
+update orders 
+set 
+order_id = 1 
+where name = 'ajay'
+
+
+delete:
+-----
+delete from orders where order_status = 'closed'
+
+
